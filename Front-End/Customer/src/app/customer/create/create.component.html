@@ -1,0 +1,73 @@
+<div class="container">
+  <form #addCustomer="ngForm" (submit)="createCustomer(addCustomer)">
+    <div class="mb-3">
+      <label class="form-label">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="ex : Abdul Majid Alam"
+        ngModel
+        name="name"
+      />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Gender</label>
+      <input type="radio" id="male" value="Male" ngModel name="gender" />Male
+      <input
+        type="radio"
+        id="female"
+        value="Female"
+        ngModel
+        name="gender"
+      />Female
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Age</label>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="ex : 25"
+        ngModel
+        name="age"
+      />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+      <input
+        type="email"
+        class="form-control"
+        placeholder="ex : test@gmail.com"
+        ngModel
+        name="email"
+      />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Address</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="ex : Bangalore"
+        ngModel
+        name="address"
+      />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Contact</label>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="ex : 1234567895"
+        ngModel
+        name="contact"
+      />
+    </div>
+
+    <button
+      type="submit"
+      class="btn btn-primary"
+      
+    >
+      Submit
+    </button>
+  </form>
+</div>
